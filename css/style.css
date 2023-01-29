@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    background-color: #f5f3ef;
+    text-align: center;
+    font-family: "Muli";
+    color: #53524E;
+
+}
+.top {
+    padding-top: 100px;
+    margin-bottom:50px;
+}
+h1 {
+    font-family: "Quattrocento Sans";
+    font-size: 3rem;
+    font-weight: 100;
+    color:black;
+}
+h2 {
+    font-size: 1.8rem;
+    font-weight: 100;
+    color: #024b30;
+}
+h3 {
+    color:black;
+}
+a:link {
+    color:green;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    color:red;
+}
+button {
+    background-color:#024b30; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: "Muli";
+    transition-duration: 0.4s;
+  }
+button:hover {
+    background-color:#77ae9a; 
+    color:black;
+    border: 2px solid #024b30;
+}  
+hr.style1 {
+    border-top: .5px solid black;
+}
+hr.style2 {
+    border-top: 2px dotted black;
+}
+.leaf1 {
+    position: absolute;
+    width: 100px;
+    top: 100px;
+    left:1000px;
+}
+.leaf2 {
+    position: absolute;
+    width: 100px;
+    left: 330px;
+    top: 100px;
+}
+.spencerimg {
+    width: 200px;
+    border-radius: 8px;
+}
+.coding {
+    width: 150px;
+}
+.column {
+    float: left;
+    width: 50%;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.target {
+    width: 130px;
+}
+.skills {
+    width: 200px;
+}
+.bottom {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #77ae9a;
+    border-top: 2px solid black;
+}
+.card {
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-left: 30%;
+    margin-right: 30%;
+    width: auto;
+    background-color: #77ae9a;
+    border: 2px solid green;
+}
+textarea {
+    font-family: "Muli";
+}
+input {
+    font-family: "Muli";
+}
+input[type=submit] {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
