@@ -1,83 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spencer Chang</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento Sans">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
-</head>
-<body>
-    <div class="top">
-        <img class="leaf1" src="images/leaf1.png" alt="leaf1 image">
-        <h1>S P E N C E R&nbsp;&nbsp; C H A N G</h1>
-        <h2>Computer Science student at the University of Georgia</h2>
-        <img class="leaf2" src="images/leaf2.png" alt="leaf2 image">
-    </div>
-
-    <div class="middle">
-        <img class="spencerimg" src="images/Spencer.JPG" alt="Spencer Chang">
-        <h2>Hello.</h2>
-        <p>I am a 3rd year computer science student and I am interested in creating cool websites!</p>
-        <hr class="style1">
-        <h2>My Skills.</h2>
-        <h3>Languages</h3>
-            
-        <div class=row>
-            <div class="column">
-                <img class="coding" src="images/coding.png" alt="coding">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">My Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          class="spencer"
+          src="./assets/spencer.png"
+          alt="Spencer Chang profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Spencer Chang</h1>
+        <p class="section__text__p2">CS Student at UGA</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Internship Resume Fall 2023.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/chang-spencer/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My GitHub profile"
+            class="icon"
+            onclick="location.href='https://github.com/spencerchang129?tab=repositories'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile.png"
+            alt="Profile Picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                2+ years <br />
+                Frontend Development
+              </p>
             </div>
-            <div class="column">
-                <ul>
-                    <li>Java</li> 
-                    <li>C++</li>
-                    <li>C</li>
-                    <li>Html</li>           
-                <ul>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.S. Computer Science</p>
             </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum
+              quod dolores inventore quam expedita sit qui ipsa blanditiis vero
+              eligendi voluptatibus earum illum, eos porro nam accusantium id
+              fugiat minus, consequatur suscipit, omnis nisi perferendis.
+              Similique, ullam mollitia? Voluptas dolor eaque officiis autem a,
+              quia fugiat perferendis architecto vero.
+            </p>
+          </div>
         </div>
-        
-        <hr class="style2">
-        <h3>Leadership and Experience</h3>
-        <div class="column">
-            <img class="target" src="images/target.png" alt="target">
-        </div>
-        <div class="column">    
-        <dl>
-            <dt>February 2021 - May 2021</dt>
-            <dd><a href="https://www.chick-fil-a.com/" target="_blank">Chickfila</a> Team Member</dd>
-            <dt>May 2021 - December 2022</dt>
-            <dd><a href="https://www.target.com/" target="_blank">Target</a> Team Member</dd>
-        </dl>
-        </div>
-
-        <hr class="style2">
-        <h3>Skills</h3>
-        <div class="column">
-            <img class="skills" src="images/skills.png" alt="skills">
-        </div>
-        <div class="column">
-            <dl>
-                <dt>Java</dt>
-                <dd>⭐️⭐️⭐️⭐️</dd>
-                <dt>C++</dt>
-                <dd>⭐️⭐️⭐️</dd>
-                <dt>Customer Service</dt>
-                <dd>⭐️⭐️⭐️⭐️⭐️</dd>
-            </dl>
-        </div>
-
-        <h3><a href="contact.html" target="_blank"><button>Get In Touch</button></a></h3>
-        
-    </div>
-    
-    <div class="bottom"> 
-        
-        <p>&copy;Spencer Chang </p>
-    </div>      
-
-    
-</body>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
