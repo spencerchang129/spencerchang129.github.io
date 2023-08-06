@@ -339,7 +339,7 @@ section {
 
 article {
     display: flex;
-    width: 15rem; 
+    width: 10rem; 
     justify-content: space-around;
     gap: 0.5rem;
 }
