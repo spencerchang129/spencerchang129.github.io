@@ -333,9 +333,8 @@ section {
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    /* gap: 2.5rem; */
-    gap: 1rem;
-    /* justify-content: space-around; */
+    gap: 2.5rem; 
+    justify-content: space-around;
 }
 
 article {
